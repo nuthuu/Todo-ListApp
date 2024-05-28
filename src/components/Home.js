@@ -1,9 +1,14 @@
+import TodoList from "./TodoList";
+import UseFetch from "./UseFetch";
+
+//creation of component
 const Home = () => {
+    const {data:todos} = UseFetch('http://localhost:4000/todos')
     return(
-        <div>
-            <h1> Home Page.</h1>
+        <div className="home">
+            {todos && <TodoList todos={todos} title="All todos"/>}
         </div>
     );
 }
-
+// export Component
 export default Home;
