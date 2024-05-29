@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 *{
   margin: 0px;
-  font-family: "Quicksand";
+  font-family: "cursive";
   color: #333;
+  background-color: rgb(237, 235, 235);
 }
 
 .navbar{
@@ -11,11 +12,11 @@
   align-items: center;
   max-width: 600px;
   margin: 0 auto;
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid #9e7272;
 }
 
 .navbar h2{
-  color: blueviolet;
+  color: rgba(29, 105, 24, 0.834);
 }
 
 .navbar.link{
@@ -29,7 +30,7 @@
 }
 
 .navbar a:hover{
-  color: blueviolet;
+  color: rgb(16, 5, 27);
 }
 
 .content{
@@ -42,7 +43,7 @@
 .preview{
   padding: 10px 16px;
   margin: 20px 0;
-  border-bottom: solid #f2f2f2;
+  border-bottom: solid #d4e2d7;
 }
 
 .preview:hover{

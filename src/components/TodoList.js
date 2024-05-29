@@ -7,7 +7,7 @@ const TodoList = ({todos, subject}) => {
                 <div className="preview" key={todo.id}>
                 <Link to={`Todo-details/${todo.id}`}>
                     <h3>{todo.subject}</h3>
-                    <p> Created at:{todo.date}</p>
+                    <p> Created For:{todo.date}</p>
                 </Link>
                 </div>
             ))}

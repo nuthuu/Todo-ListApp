@@ -26,7 +26,7 @@ const handleSubmit = (e) => {
     e.preventDefault();
 
     //check for input validation
-    if (!inputValue.subject || !inputValue.data || !inputValue.list) {
+    if (!inputValue.subject || !inputValue.date || !inputValue.list) {
         toast.error('please fill up the fields', {
             position: toast.POSITION.TOP_CENTER,
             autoClose: 4000,
@@ -68,15 +68,15 @@ const handleSubmit = (e) => {
 
                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                     <Form.Label>Date:</Form.Label>
-                    <Form.Control name="date" type="date" value={inputValue.date} onChange={handleChange} placeholder="Enter Subject"></Form.Control>
+                    <Form.Control name="date" type="date" value={inputValue.date} onChange={handleChange}></Form.Control>
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                     <Form.Label>List:</Form.Label>
-                    <Form.Control as="textarea" name="list" type="text" value={inputValue.list} onChange={handleChange} rows={3}></Form.Control>
+                    <Form.Control as="textarea" name="list" type="text" value={inputValue.list} onChange={handleChange} rows={5}></Form.Control>
                 </Form.Group>
 
-                <Button variant="primary" type="submit">Save List</Button>
+                <Button variant="success" type="submit">Save List</Button>
                 <ToastContainer/>
 
             </Form>
