@@ -24,7 +24,7 @@ const TodoDetails = () => {
                 <article>
                     <h3> {todos.subject} </h3>
                     <p> Created For:{todos.date} </p>
-                    <div>{todos.list}</div>
+                    <div>{todos.details}</div>
                     <Button onClick={handleDelete} variant="danger" className="mt-3" type="submit" > Delete List </Button>
                 </article>
             )}

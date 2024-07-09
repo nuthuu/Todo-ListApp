@@ -21,7 +21,7 @@ function App() {
             <Route path="/Create">
               <CreateList></CreateList>
             </Route>
-            <Route path="Todo-details/:id">
+            <Route path="/Todo-details/:id">
               <TodoDetails></TodoDetails>
             </Route>
             <Route path="*">

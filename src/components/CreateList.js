@@ -11,7 +11,7 @@ const CreateList = () => {
     const [inputValue, setInputValue] = useState({
         subject: '',
         date: '',
-        list: ''
+        details: ''
     });
 //function to change the input.
     const handleChange = (e) => {
@@ -26,7 +26,7 @@ const handleSubmit = (e) => {
     e.preventDefault();
 
     //check for input validation
-    if (!inputValue.subject || !inputValue.date || !inputValue.list) {
+    if (!inputValue.subject || !inputValue.date || !inputValue.details) {
         toast.error('please fill up the fields', {
             position: toast.POSITION.TOP_CENTER,
             autoClose: 4000,
@@ -43,7 +43,7 @@ const handleSubmit = (e) => {
             autoClose: 4000,   
         });
         //reset the form to empty
-        setInputValue({subject: '', date: '', list: ''})
+        setInputValue({subject: '', date: '', details: ''})
     })
     //catch the error
     .catch(err=>{
@@ -72,8 +72,8 @@ const handleSubmit = (e) => {
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                    <Form.Label>List:</Form.Label>
-                    <Form.Control as="textarea" name="list" type="text" value={inputValue.list} onChange={handleChange} rows={5}></Form.Control>
+                    <Form.Label>Details:</Form.Label>
+                    <Form.Control as="textarea" name="details" type="text" value={inputValue.details} onChange={handleChange} rows={5}></Form.Control>
                 </Form.Group>
 
                 <Button variant="success" type="submit">Save List</Button>
